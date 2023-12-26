@@ -1,0 +1,5 @@
+const weatherData = [
+    {
+    sunny : 'sunny',
+    }
+]

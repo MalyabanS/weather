@@ -1,0 +1,17 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+
+  .signature {
+    height: 50%;
+    width: auto;
+  }
+}
+
+img.signature {
+  height: 50%;
+  width: auto;
+}
