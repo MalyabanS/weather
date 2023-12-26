@@ -4,7 +4,7 @@ import signature from '../../images/signature.png'
 
 function Footer() {
   return (
-    <footer className='footerContainer'> &copy; 2024 || Weather App<img className='signature' src={signature}/></footer>
+    <footer className='footerContainer'> &copy; 2024 || Weather App<img className='signature' alt='signature' src={signature}/></footer>
   )
 }
 
