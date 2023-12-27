@@ -12,7 +12,7 @@ const WeeklyForecast = (props) => {
             <Moment format="ddd">{items[1]?.dt_txt}</Moment>
             <Moment format="HH:MM">{items[1]?.dt_txt}</Moment>
             <img
-              src={`http://openweathermap.org/img/w/${items[1]?.weather[0]?.icon}.png`}
+              src={`https://openweathermap.org/img/w/${items[1]?.weather[0]?.icon}.png`}
               alt="weatherIcon"
             />
             <p>{items[1]?.weather[0]?.main}</p>

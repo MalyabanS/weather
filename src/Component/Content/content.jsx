@@ -152,7 +152,7 @@ const Content = (props) =>{
                 </div>
                 <div className="temperature">
                   <img
-                    src={`http://openweathermap.org/img/w/${
+                    src={`https://openweathermap.org/img/w/${
                       weatherIcon || currentWeather.weather?.[0]?.icon
                     }.png`}
                     alt="weatherIcon"
