@@ -8,10 +8,14 @@ function App(props) {
   const [currentLocationLongitudeLatitude, setCurrentLocation] = useState();
 
   useEffect(() => {
+    console.log(navigator.geolocation,'hello world')
     navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position,'hello world')
       const liveCoordinates = position.coords;
       setCurrentLocation(liveCoordinates);
       setLoadingPage(false);
+    },(err) => {
+      console.log(err)
     });
   }, []);
 

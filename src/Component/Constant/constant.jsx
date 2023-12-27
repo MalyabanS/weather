@@ -1,5 +1,0 @@
-const weatherData = [
-    {
-    sunny : 'sunny',
-    }
-]
