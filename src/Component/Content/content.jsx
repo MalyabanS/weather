@@ -51,6 +51,9 @@ const Content = (props) =>{
   const [dailyWeatherForecast, setDailyWeatherForecast] = useState("");
   const [errorRes, setErrorRes] = useState("");
 
+  // console.log(props,'props')
+  // debugger
+
   const weatherIcon = baseWeatherDetails?.weather?.[0].icon;
 
   const WEATHER_URL = `${Weather_Api_Key.base}weather?q=${search}&units=metric&APPID=7a4e9a47dcb442bb145459951e36b8ac`;
@@ -145,9 +148,9 @@ const Content = (props) =>{
             <div className="details">
               <div>
                 <div className="city_name">
-                  {`${baseWeatherDetails?.name || currentCity.name} , ${
+                  {`${baseWeatherDetails?.name || currentCity.name || ''},  ${
                     baseWeatherDetails?.sys?.country ||
-                    currentCity?.sys?.country
+                    currentCity?.sys?.country || ''
                   }`}
                 </div>
                 <div className="temperature">

@@ -17,7 +17,7 @@ function App(props) {
     },(err) => {
       console.log(err)
     });
-  }, []);
+  },[]);
 
   return (
     <>
